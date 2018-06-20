@@ -1,10 +1,12 @@
 ---
 swagger: "2.0"
 x-collection-name: Twilio
-x-complete: 1
+x-complete: 0
 info:
-  title: Twilio
-  description: twilio-is-a-cloud-communications-infrastructure-as-a-serviceiaas-company-based-in-san-francisco-california--twilio-allows-software-developers-to-programmatically-make-and-receive-phone-calls-and-send-and-receive-text-messages-using-its-web-service-apis--twilios-services-are-accessed-over-http-and-are-billed-based-on-usage-
+  title: Twilio Update Incoming Phone Number
+  description: Tries to update the incoming phone numbers properties, and returns
+    thenupdated resource representation if successful. The returned response isnidentical
+    to that returned above when making a GET request.n
   termsOfService: https://www.twilio.com/legal/tos
   version: v1
 host: api.twilio.com
@@ -260,4 +262,17 @@ paths:
           description: OK
       tags:
       - Incoming Phone Numbers
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
 ---

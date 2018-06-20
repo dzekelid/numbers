@@ -4,7 +4,7 @@ x-collection-name: ARIN
 x-complete: 1
 info:
   title: Autonomous System Numbers (ASNs) API
-  description: for-managing-autonomous-system-numbers-asns
+  description: for-managing-autonomous-system-numbers-asns-
   version: 1.0.0
 schemes:
 - http

@@ -1,24 +1,23 @@
 ---
 name: ARIN
 x-slug: arin
-description: ARIN offers public access to ARIN registration data via a number of services.
-  Traditionally, these services are known in the industry as Whois in reference to
-  the public data service of the ARPANET, precursor of todays modern Internet. Whois
-  services are offered by all the Regional Internet Registries (RIRs), most Internet
-  Routing Registries (IRRs) and most domain name registries and registrars.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/arin-logo.png
+description: 'The American Registry for Internet Numbers (ARIN) is a Regional Internet
+  Registry (RIR) incorporated in the Commonwealth of Virginia, USA. ARIN is one of
+  five (5) RIRs. Like the other RIRs, ARIN:    Provides services related to the technical
+  coordinati...'
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1381-arin.jpg
 x-kinRank: "8"
-x-alexaRank: ""
+x-alexaRank: "51791"
 tags: Numbers
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/arin/apis.md
 specificationVersion: "0.14"
 apis:
 - name: Autonomous System Numbers (ASNs) API Autonomous System Number(s)
   x-api-slug: autonomous-system-numbers-asns-api
   description: ""
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/arin-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1381-arin.jpg
   humanURL: https://www.arin.net
   baseURL: ://///asn
   tags: Autonomous Systen Numbers
@@ -29,12 +28,11 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/arin/asn-get-openapi.md
 - name: Autonomous System Numbers (ASNs) API
   x-api-slug: autonomous-system-numbers-asns-api
-  description: ARIN offers public access to ARIN registration data via a number of
-    services. Traditionally, these services are known in the industry as Whois in
-    reference to the public data service of the ARPANET, precursor of todays modern
-    Internet. Whois services are offered by all the Regional Internet Registries (RIRs),
-    most Internet Routing Registries (IRRs) and most domain name registries and registrars.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/arin-logo.png
+  description: 'The American Registry for Internet Numbers (ARIN) is a Regional Internet
+    Registry (RIR) incorporated in the Commonwealth of Virginia, USA. ARIN is one
+    of five (5) RIRs. Like the other RIRs, ARIN:    Provides services related to the
+    technical coordinati...'
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1381-arin.jpg
   humanURL: https://www.arin.net
   baseURL: :///
   tags: Numbers
@@ -44,8 +42,30 @@ apis:
 x-common:
 - type: x-website
   url: https://www.arin.net
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/american-registry-for-internet-numbers
 - type: x-developer
   url: https://www.arin.net/resources/restful-interfaces.html
+- type: x-email
+  url: hostmaster@arin.net
+- type: x-email
+  url: billing@arin.net
+- type: x-email
+  url: reassign@arin.net
+- type: x-email
+  url: info@arin.net
+- type: x-email
+  url: meetings@arin.net
+- type: x-email
+  url: members@arin.net
+- type: x-email
+  url: compliance@arin.net
+- type: x-email
+  url: mlc@arin.net
+- type: x-email
+  url: media@arin.net
+- type: x-email
+  url: noc@arin.net
 - type: x-github
   url: https://github.com/arineng
 - type: x-twitter
