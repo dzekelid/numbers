@@ -7,52 +7,58 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-call
 x-kinRank: "9"
 x-alexaRank: "129466"
 tags: Numbers
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Callfire Find leases
-  x-api-slug: callfire
+- name: CallFire - Find leases
+  x-api-slug: numbersleases-get
   description: Searches for all numbers leased by account user. This API is useful
     for finding all numbers currently owned by the user. Returns a paged list of number
     leases.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//numbers/leases
-  tags: Numbers,Leases
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleases-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleases-get-openapi.md
-- name: Callfire Find lease configs
-  x-api-slug: callfire
+- name: CallFire - Find lease configs
+  x-api-slug: numbersleasesconfigs-get
   description: Searches for all number lease configs for the user. Returns a paged
     list of NumberConfig
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//numbers/leases/configs
-  tags: Numbers,Leases,Configs
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigs-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigs-get-openapi.md
-- name: Callfire Find a specific lease config
-  x-api-slug: callfire
+- name: CallFire - Find a specific lease config
+  x-api-slug: numbersleasesconfigsnumber-get
   description: Returns a single NumberConfig instance for a given number lease
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//numbers/leases/configs/{number}
-  tags: Numbers,Leases,Configs,Number
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigsnumber-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigsnumber-get-openapi.md
-- name: Callfire Update a lease config
-  x-api-slug: callfire
+- name: CallFire - Update a lease config
+  x-api-slug: numbersleasesconfigsnumber-put
   description: Updates a phone number lease configuration. Use this API endpoint to
     add an Inbound IVR or Call Tracking feature to a CallFire phone number. Call tracking
     configuration allows you to track the incoming calls, to analyze and to respond
@@ -60,69 +66,81 @@ apis:
     page](https://www.callfire.com/products/call-tracking)
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//numbers/leases/configs/{number}
-  tags: Numbers,Leases,Configs,Number
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigsnumber-put-openapi.md
-- name: Callfire Find a specific lease
-  x-api-slug: callfire
+- name: CallFire - Find a specific lease
+  x-api-slug: numbersleasesnumber-get
   description: Returns a single NumberLease instance for a given number
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//numbers/leases/{number}
-  tags: Numbers,Leases,Number
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesnumber-get-openapi.md
-- name: Callfire Update a lease
-  x-api-slug: callfire
+- name: CallFire - Update a lease
+  x-api-slug: numbersleasesnumber-put
   description: Updates a number lease instance. Ability to turn on/off autoRenew and
     toggle call/text features for a particular number
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//numbers/leases/{number}
-  tags: Numbers,Leases,Number
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesnumber-put-openapi.md
-- name: Callfire Find local numbers
-  x-api-slug: callfire
+- name: CallFire - Find local numbers
+  x-api-slug: numberslocal-get
   description: Searches for numbers available for purchase in CallFire local numbers
     catalog . At least one additional parameter is required. User may filter local
     numbers by their region information.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//numbers/local
-  tags: Numbers,Local
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numberslocal-get-openapi.md
-- name: Callfire Find number regions
-  x-api-slug: callfire
+- name: CallFire - Find number regions
+  x-api-slug: numbersregions-get
   description: Searches for region information. Use this API to obtain detailed region
     information that can be used to query for more specific phone numbers than a general
     query.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//numbers/regions
-  tags: Numbers,Regions
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersregions-get-openapi.md
-- name: Callfire Find tollfree numbers
-  x-api-slug: callfire
+- name: CallFire - Find tollfree numbers
+  x-api-slug: numberstollfree-get
   description: Searches for the toll free numbers which are available for purchase
     in the CallFire catalog
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//numbers/tollfree
-  tags: Numbers,Tollfree
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numberstollfree-get-openapi.md
-- name: Callfire Purchase numbers
-  x-api-slug: callfire
+- name: CallFire - Purchase numbers
+  x-api-slug: ordersnumbers-post
   description: Purchase numbers. There are many ways to purchase a number. Set either
     'tollFreeCount' or 'localCount' along with some querying fields to purchase numbers
     by bulk query. Set the list of numbers to purchase by list. Available numbers
@@ -130,22 +148,201 @@ apis:
     has enough credits before trying to purchase
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//orders/numbers
-  tags: Orders,Numbers
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/ordersnumbers-post-openapi.md
-- name: Callfire
-  x-api-slug: callfire
-  description: Grow your business with virtual phone numbers, IVR, voice broadcasting,
-    mass text messaging services and power dialing. Try CallFire for FREE!
+- name: CallFire - Delete do not contact (dnc) number. If number contains commas treat
+    as list of numbers
+  x-api-slug: contactsdncsnumber-delete
+  description: Delete a Do Not Contact (DNC) contact entry.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2
-  tags: Numbers
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/contactsdncsnumber-delete-openapi.md
+- name: CallFire - Get do not contact (dnc)
+  x-api-slug: contactsdncsnumber-get
+  description: Get Do Not Contact (DNC) object create by user. This DoNotContact entry
+    only affects calls/texts/campaigns on this account.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/contactsdncsnumber-get-openapi.md
+- name: CallFire - Update an individual do not contact (dnc) number
+  x-api-slug: contactsdncsnumber-put
+  description: Update a Do Not Contact (DNC) contact entry. Can toggle whether the
+    DNC is enabled for calls/texts.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/contactsdncsnumber-put-openapi.md
+- name: CallFire - Find a specific lease config
+  x-api-slug: numbersleasesconfigsnumber-get
+  description: Returns a single NumberConfig instance for a given number lease
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigsnumber-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigsnumber-get-openapi.md
+- name: CallFire - Update a lease config
+  x-api-slug: numbersleasesconfigsnumber-put
+  description: Updates a phone number lease configuration. Use this API endpoint to
+    add an Inbound IVR or Call Tracking feature to a CallFire phone number. Call tracking
+    configuration allows you to track the incoming calls, to analyze and to respond
+    customers using sms or voice replies. For more information see [call tracking
+    page](https://www.callfire.com/products/call-tracking)
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigsnumber-put-openapi.md
+- name: CallFire - Find a specific lease
+  x-api-slug: numbersleasesnumber-get
+  description: Returns a single NumberLease instance for a given number
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesnumber-get-openapi.md
+- name: CallFire - Update a lease
+  x-api-slug: numbersleasesnumber-put
+  description: Updates a number lease instance. Ability to turn on/off autoRenew and
+    toggle call/text features for a particular number
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesnumber-put-openapi.md
+- name: CallFire - Update a lease
+  x-api-slug: numbersleasesnumber-put
+  description: Updates a number lease instance. Ability to turn on/off autoRenew and
+    toggle call/text features for a particular number
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesnumber-put-openapi.md
+- name: CallFire - Find a specific lease
+  x-api-slug: numbersleasesnumber-get
+  description: Returns a single NumberLease instance for a given number
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesnumber-get-openapi.md
+- name: CallFire - Update a lease config
+  x-api-slug: numbersleasesconfigsnumber-put
+  description: Updates a phone number lease configuration. Use this API endpoint to
+    add an Inbound IVR or Call Tracking feature to a CallFire phone number. Call tracking
+    configuration allows you to track the incoming calls, to analyze and to respond
+    customers using sms or voice replies. For more information see [call tracking
+    page](https://www.callfire.com/products/call-tracking)
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigsnumber-put-openapi.md
+- name: CallFire - Find a specific lease config
+  x-api-slug: numbersleasesconfigsnumber-get
+  description: Returns a single NumberConfig instance for a given number lease
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigsnumber-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/numbersleasesconfigsnumber-get-openapi.md
+- name: CallFire - Update an individual do not contact (dnc) number
+  x-api-slug: contactsdncsnumber-put
+  description: Update a Do Not Contact (DNC) contact entry. Can toggle whether the
+    DNC is enabled for calls/texts.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/contactsdncsnumber-put-openapi.md
+- name: CallFire - Get do not contact (dnc)
+  x-api-slug: contactsdncsnumber-get
+  description: Get Do Not Contact (DNC) object create by user. This DoNotContact entry
+    only affects calls/texts/campaigns on this account.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/contactsdncsnumber-get-openapi.md
+- name: CallFire - Delete do not contact (dnc) number. If number contains commas treat
+    as list of numbers
+  x-api-slug: contactsdncsnumber-delete
+  description: Delete a Do Not Contact (DNC) contact entry.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/numbers/master/_listings/callfire/contactsdncsnumber-delete-openapi.md
 x-common:
 - type: x--net-sdk
   url: https://github.com/CallFire/CallFire-CSharp-SDK
@@ -153,6 +350,10 @@ x-common:
   url: https://answers.callfire.com/hc/en-us/sections/200166268-Billing
 - type: x-account-settings
   url: https://answers.callfire.com/hc/en-us/sections/200187056-Account-Settings
+- type: x-api-gallery
+  url: http://bureau.of.justice.statistics.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://callfire.stack.network
 - type: x-authentication
   url: https://www.callfire.com/api-documentation/how-do-i-enable-api-on-my-account
 - type: x-blog

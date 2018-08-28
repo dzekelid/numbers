@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: CallFire
 x-complete: 1
@@ -332,4 +331,60 @@ paths:
       tags:
       - Orders
       - Numbers
----
+  /contacts/dncs/{number}:
+    delete:
+      summary: Delete do not contact (dnc) number. If number contains commas treat
+        as list of numbers
+      description: Delete a Do Not Contact (DNC) contact entry.
+      operationId: deleteDoNotContact
+      x-api-path-slug: contactsdncsnumber-delete
+      parameters:
+      - in: path
+        name: number
+        description: Number associated with Do Not Contact (DNC) entry
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contacts
+      - Dncs
+      - Number
+    get:
+      summary: Get do not contact (dnc)
+      description: Get Do Not Contact (DNC) object create by user. This DoNotContact
+        entry only affects calls/texts/campaigns on this account.
+      operationId: getDoNotContact
+      x-api-path-slug: contactsdncsnumber-get
+      parameters:
+      - in: path
+        name: number
+        description: Number associated with Do Not Contact (DNC) entry
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contacts
+      - Dncs
+      - Number
+    put:
+      summary: Update an individual do not contact (dnc) number
+      description: Update a Do Not Contact (DNC) contact entry. Can toggle whether
+        the DNC is enabled for calls/texts.
+      operationId: updateDoNotContact
+      x-api-path-slug: contactsdncsnumber-put
+      parameters:
+      - in: body
+        name: body
+        description: DoNotContact object
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: number
+        description: "~"
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contacts
+      - Dncs
+      - Number

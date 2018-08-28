@@ -210,6 +210,56 @@ paths:
           description: OK
       tags:
       - Incoming Phone Numbers
+    post:
+      summary: Add Incoming Phone Number
+      description: Tries to update the incoming phone numbers properties, and returns
+        thenupdated resource representation if successful. The returned response isnidentical
+        to that returned above when making a GET request.n
+      operationId: tries-to-update-the-incoming-phone-numbers-properties-and-returns-theupdated-resource-representation
+      x-api-path-slug: accountsaccountsidincomingphonenumbersincomingphonenumbersid-format-post
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: format
+        description: By default, Twilios REST API returns XML
+        type: string
+        format: string
+      - in: path
+        name: IncomingPhoneNumberSid
+        description: A 34 character string that uniquely identifies the incoming phone
+          number
+      responses:
+        200:
+          description: OK
+      tags:
+      - Incoming Phone Numbers
+    put:
+      summary: Update Incoming Phone Number
+      description: Tries to update the incoming phone numbers properties, and returns
+        thenupdated resource representation if successful. The returned response isnidentical
+        to that returned above when making a GET request.n
+      operationId: tries-to-update-the-incoming-phone-numbers-properties-and-returns-theupdated-resource-representation
+      x-api-path-slug: accountsaccountsidincomingphonenumbersincomingphonenumbersid-format-put
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: format
+        description: By default, Twilios REST API returns XML
+        type: string
+        format: string
+      - in: path
+        name: IncomingPhoneNumberSid
+        description: A 34 character string that uniquely identifies the incoming phone
+          number
+      responses:
+        200:
+          description: OK
+      tags:
+      - Incoming Phone Numbers
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

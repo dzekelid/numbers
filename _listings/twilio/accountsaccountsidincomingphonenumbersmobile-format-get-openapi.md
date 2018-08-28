@@ -162,6 +162,107 @@ paths:
           description: OK
       tags:
       - Incoming Phone Numbers
+  /Accounts/{AccountSid}/IncomingPhoneNumbers/{IncomingPhoneNumberSid}.{format}:
+    delete:
+      summary: Delete Incoming Phone Number
+      description: Release this phone number from your account. Twilio will no longer
+        answerncalls to this number, and you will stop being billed the monthly phonennumber
+        fee. The phone number will eventually be recycled and potentiallyngiven to
+        another customer, so use with care. If you make a mistake, contacnus. We may
+        be able to give you the number back.n
+      operationId: release-this-phone-number-from-your-account-twilio-will-no-longer-answercalls-to-this-number-and-you
+      x-api-path-slug: accountsaccountsidincomingphonenumbersincomingphonenumbersid-format-delete
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: format
+        description: By default, Twilios REST API returns XML
+        type: string
+        format: string
+      - in: path
+        name: IncomingPhoneNumberSid
+        description: A 34 character string that uniquely identifies the incoming phone
+          number
+      responses:
+        200:
+          description: OK
+      tags:
+      - Incoming Phone Numbers
+    get:
+      summary: Get Incoming Phone Number
+      description: Get info about incoming calls phone number.
+      operationId: get-info-about-incoming-calls-phone-number
+      x-api-path-slug: accountsaccountsidincomingphonenumbersincomingphonenumbersid-format-get
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: format
+        description: By default, Twilios REST API returns XML
+        type: string
+        format: string
+      - in: path
+        name: IncomingPhoneNumberSid
+        description: A 34 character string that uniquely identifies the incoming phone
+          number
+      responses:
+        200:
+          description: OK
+      tags:
+      - Incoming Phone Numbers
+    post:
+      summary: Add Incoming Phone Number
+      description: Tries to update the incoming phone numbers properties, and returns
+        thenupdated resource representation if successful. The returned response isnidentical
+        to that returned above when making a GET request.n
+      operationId: tries-to-update-the-incoming-phone-numbers-properties-and-returns-theupdated-resource-representation
+      x-api-path-slug: accountsaccountsidincomingphonenumbersincomingphonenumbersid-format-post
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: format
+        description: By default, Twilios REST API returns XML
+        type: string
+        format: string
+      - in: path
+        name: IncomingPhoneNumberSid
+        description: A 34 character string that uniquely identifies the incoming phone
+          number
+      responses:
+        200:
+          description: OK
+      tags:
+      - Incoming Phone Numbers
+    put:
+      summary: Update Incoming Phone Number
+      description: Tries to update the incoming phone numbers properties, and returns
+        thenupdated resource representation if successful. The returned response isnidentical
+        to that returned above when making a GET request.n
+      operationId: tries-to-update-the-incoming-phone-numbers-properties-and-returns-theupdated-resource-representation
+      x-api-path-slug: accountsaccountsidincomingphonenumbersincomingphonenumbersid-format-put
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: format
+        description: By default, Twilios REST API returns XML
+        type: string
+        format: string
+      - in: path
+        name: IncomingPhoneNumberSid
+        description: A 34 character string that uniquely identifies the incoming phone
+          number
+      responses:
+        200:
+          description: OK
+      tags:
+      - Incoming Phone Numbers
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
